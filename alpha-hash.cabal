@@ -1,0 +1,48 @@
+name:                alpha-hash
+version:             0.0.0.0
+
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Collision,
+                       Hash,
+                       AlphaHashInefficient,
+                       AlphaHashEfficient,
+                       AlphaHashEfficientHash,
+                       AlphaHashOptimizedHash,
+                       AlphaHashOptimizedHash16Bit,
+                       ManualBenchmark,
+                       Merge,
+                       Expr,
+                       Benchmark
+  build-depends:       base,
+                       containers >= 0.5.9,
+                       hashable,
+                       hedgehog,
+                       transformers,
+                       clock,
+                       temporary,
+                       blaze-html,
+                       microlens,
+                       random
+  default-language:    Haskell2010
+  ghc-options: -Werror -Wall
+
+executable hash
+  main-is:             Main.hs
+  hs-source-dirs:      exe
+  build-depends:       base,
+                       containers >= 0.5.9,
+                       hashable,
+                       alpha-hash,
+                       hedgehog,
+                       transformers,
+                       clock,
+                       temporary,
+                       blaze-html,
+                       microlens,
+                       random
+  default-language:    Haskell2010
+  ghc-options: -Werror -Wall -O2 -rtsopts
