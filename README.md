@@ -61,7 +61,7 @@ Most commands have two variants:
 
 ## Authors
 
-* [Tom Ellis](mailto:tom.ellis@microsoft.com)
+* [Tom Ellis](http://web.jaguarpaw.co.uk/~tom/contact)
 * [Krzysztof Maziarz](mailto:krzysztof.maziarz@microsoft.com)
 * [Alan Lawrence](mailto:allawr@microsoft.com)
 * [Andrew Fitzgibbon](mailto:awf@microsoft.com)
